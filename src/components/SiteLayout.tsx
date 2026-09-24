@@ -127,10 +127,11 @@ const SiteLayout = () => {
             aria-hidden="true"
           />
           <div className="absolute inset-y-0 left-0 w-[85%] max-w-sm bg-navy shadow-raise animate-slide-in flex flex-col">
-            <div className="flex justify-end px-3 pt-3">
+            <div className="flex items-center justify-between px-5 h-16 border-b border-paper/10 shrink-0">
+              <p className="text-xs uppercase tracking-label text-gold">Menu</p>
               <button
                 onClick={() => setDrawerOpen(false)}
-                className="p-2 text-paper/80 hover:text-paper transition-colors duration-200"
+                className="p-2 text-paper/80 hover:text-paper border border-paper/20 transition-colors duration-200"
                 aria-label="Close navigation"
               >
                 <X className="w-5 h-5" />

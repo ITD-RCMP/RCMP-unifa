@@ -52,7 +52,7 @@ const Index = () => {
       <section className="bg-navy text-paper">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-16 md:py-24">
           <p className="text-[11px] uppercase tracking-label text-gold font-semibold">Student finance</p>
-          <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl leading-[1.16] text-paper">
+          <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl leading-[1.24] md:leading-[1.16] text-paper">
             Money for your medical training, without the guesswork.
           </h1>
           <p className="mt-6 text-base md:text-lg text-paper/80 max-w-2xl leading-relaxed">

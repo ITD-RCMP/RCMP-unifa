@@ -14,7 +14,7 @@ interface SEOProps {
 const SEO = ({ title, description, image, article }: SEOProps) => {
   useEffect(() => {
     // Update document title
-    document.title = `${title} | Noir`;
+    document.title = `${title} | RCMP Financial Aids`;
 
     // Update or create meta tags
     const updateMetaTag = (property: string, content: string) => {

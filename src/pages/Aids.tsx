@@ -78,6 +78,7 @@ const Aids = () => {
       <div className="border-b border-border bg-card">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-12 md:py-16">
           <SectionHeader
+            as="h1"
             eyebrow="Compare side by side"
             title="All financial aids"
             description="Filter the list to what fits your situation, then open a programme to read the full eligibility rules. Nothing here requires you to log in."

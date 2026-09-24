@@ -114,6 +114,7 @@ const HowToApply = () => {
       <div className="border-b border-border bg-card">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-12 md:py-16">
           <SectionHeader
+            as="h1"
             eyebrow="The process"
             title="How applying actually works"
             description="Applying for aid is not one form. It is a short sequence, and the order matters more than most students expect. Here is the sequence, and where the time goes."

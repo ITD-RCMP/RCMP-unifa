@@ -36,6 +36,7 @@ const About = () => (
     <div className="border-b border-border bg-card">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-12 md:py-16">
         <SectionHeader
+          as="h1"
           eyebrow="Who we are"
           title="About the aid office"
           description="The student finance desk sits between you and the funding bodies: PTPTN, the state zakat authority, the state foundation, the armed forces, and the college's own bursaries, waivers and hardship fund."

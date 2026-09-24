@@ -97,6 +97,7 @@ const Faq = () => (
     <div className="border-b border-border bg-card">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-12 md:py-16">
         <SectionHeader
+          as="h1"
           eyebrow="Quick answers"
           title="Common questions"
           description="The questions the student finance desk hears most often, answered without the form-filling language. If your situation is not here, ask — most odd cases have a workable route."

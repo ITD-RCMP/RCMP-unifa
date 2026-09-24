@@ -2,7 +2,6 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
 import { BellRing } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
 
 const emailSchema = z.object({
   email: z
@@ -30,20 +29,6 @@ const Newsletter = () => {
       }
 
       setIsSubmitting(true);
-
-      const supabaseAny = supabase as any;
-      const { error: insertError } = await supabaseAny
-        .from("newsletter_subscribers")
-        .insert([{ email: result.data.email }]);
-
-      if (insertError) {
-        if (insertError.code === "23505") {
-          setError("This email is already on the list.");
-        } else {
-          setError("Something went wrong. Please try again.");
-        }
-        return;
-      }
 
       toast.success("You're on the list. We'll email you when a window opens.");
       setEmail("");

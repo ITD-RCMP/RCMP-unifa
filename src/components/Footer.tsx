@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-14">
       <div className="grid gap-10 md:grid-cols-3">
         <div>
-          <p className="font-display font-bold text-foreground text-lg">RCMP Financial Aids</p>
+          <p className="font-display text-foreground text-lg">RCMP Financial Aids</p>
           <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-xs">
             A student-facing guide to the money on offer at Royal College of Medicine Perak, and
             who qualifies for each one.

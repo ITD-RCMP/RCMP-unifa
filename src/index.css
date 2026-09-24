@@ -109,7 +109,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-family: 'Hind', 'Segoe UI', system-ui, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -117,17 +117,29 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-weight: 700;
+    font-family: 'Archivo Black', 'Arial Black', system-ui, sans-serif;
+    /* Archivo Black ships a single weight; keep it at 400 so the browser
+       never fakes bold and smudges the letterforms. */
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    line-height: 1.12;
     text-wrap: balance;
+  }
+
+  /* Long headline blocks read better with a touch more air at heavy weight. */
+  h1 {
+    letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Libre Baskerville', Georgia, serif;
+    font-family: 'Archivo Black', 'Arial Black', system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
 
+  /* Small-caps style labels: Hind at medium weight keeps them legible. */
   .tracking-label {
     letter-spacing: 0.12em;
   }

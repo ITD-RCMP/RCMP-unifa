@@ -72,8 +72,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ['"Libre Baskerville"', 'Georgia', 'serif'],
-        sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Archivo Black"', '"Arial Black"', 'system-ui', 'sans-serif'],
+        sans: ['"Hind"', '"Segoe UI"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         card: "var(--shadow-card)",

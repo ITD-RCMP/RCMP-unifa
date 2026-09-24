@@ -1,50 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Noir Blog Design System - Monochromatic Dark Theme */
+/* RCMP Financial Aids Design System
+   Institutional Trust: deep navy, warm gold, paper white, slate text */
 
 @layer base {
   :root {
-    /* Clean White Theme */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    /* Surfaces */
+    --background: 216 40% 98%;
+    --foreground: 213 73% 16%;
 
-    /* Elevated Surfaces */
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 213 73% 16%;
 
-    --popover: 0 0% 98%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 73% 16%;
 
-    /* Primary (Dark text on light) */
-    --primary: 0 0% 10%;
-    --primary-foreground: 0 0% 100%;
+    /* Primary: deep navy */
+    --primary: 213 73% 16%;
+    --primary-foreground: 216 40% 98%;
 
-    /* Secondary (Light gray surfaces) */
-    --secondary: 0 0% 95%;
-    --secondary-foreground: 0 0% 10%;
+    /* Secondary: mid navy */
+    --secondary: 215 66% 22%;
+    --secondary-foreground: 216 40% 98%;
 
-    /* Muted (Medium gray text) */
-    --muted: 0 0% 92%;
-    --muted-foreground: 0 0% 45%;
+    /* Muted surfaces and secondary text */
+    --muted: 216 30% 94%;
+    --muted-foreground: 213 17% 43%;
 
-    /* Accent (Subtle gray) */
-    --accent: 0 0% 90%;
-    --accent-foreground: 0 0% 10%;
+    /* Accent: warm gold */
+    --accent: 46 67% 47%;
+    --accent-foreground: 213 73% 16%;
 
-    /* Borders (Subtle) */
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 0% 10%;
+    /* Form + structure */
+    --border: 214 25% 87%;
+    --input: 214 25% 87%;
+    --ring: 46 67% 47%;
 
-    /* Destructive */
-    --destructive: 0 84% 60%;
+    /* Status */
+    --destructive: 0 68% 42%;
     --destructive-foreground: 0 0% 100%;
+    --success: 152 42% 28%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0rem;
+    /* Named brand surfaces */
+    --navy: 213 73% 16%;
+    --navy-mid: 215 66% 22%;
+    --gold: 46 67% 47%;
+    --gold-soft: 45 62% 94%;
+    --paper: 216 40% 98%;
+    --slate: 213 17% 43%;
+
+    --shadow-card: 0 1px 2px hsl(213 40% 30% / 0.06), 0 10px 26px -18px hsl(213 73% 16% / 0.35);
+    --shadow-raise: 0 2px 4px hsl(213 40% 30% / 0.08), 0 18px 40px -20px hsl(213 73% 16% / 0.45);
+
+    --radius: 0.25rem;
+  }
+
+  .dark {
+    --background: 214 55% 7%;
+    --foreground: 216 30% 93%;
+
+    --card: 214 50% 10%;
+    --card-foreground: 216 30% 93%;
+
+    --popover: 214 50% 10%;
+    --popover-foreground: 216 30% 93%;
+
+    --primary: 46 67% 55%;
+    --primary-foreground: 214 55% 8%;
+
+    --secondary: 215 45% 18%;
+    --secondary-foreground: 216 30% 93%;
+
+    --muted: 214 40% 15%;
+    --muted-foreground: 216 15% 65%;
+
+    --accent: 46 67% 55%;
+    --accent-foreground: 214 55% 8%;
+
+    --border: 214 30% 22%;
+    --input: 214 30% 22%;
+    --ring: 46 67% 55%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 40% 45%;
+    --success-foreground: 214 55% 8%;
+
+    --navy: 214 55% 7%;
+    --navy-mid: 215 45% 14%;
+    --gold: 46 67% 55%;
+    --gold-soft: 215 45% 13%;
+    --paper: 214 55% 7%;
+    --slate: 216 15% 65%;
   }
 }
 
@@ -53,70 +103,44 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground font-light;
-    font-family: 'Inter', sans-serif;
+    @apply bg-background text-foreground;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-normal;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 700;
+    text-wrap: balance;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
   }
-  
-  .tracking-display {
-    letter-spacing: -0.025em;
-  }
-  
+
   .tracking-label {
-    letter-spacing: 0.15em;
+    letter-spacing: 0.12em;
   }
-  
+
   .reading-text {
-    line-height: 1.8;
-  }
-  
-  .date-numbers {
-    font-feature-settings: 'onum' 1;
-  }
-  
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-  
-  .focus\:not-sr-only:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    padding: inherit;
-    margin: inherit;
-    overflow: visible;
-    clip: auto;
-    white-space: normal;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
+    line-height: 1.75;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-raise {
+    box-shadow: var(--shadow-raise);
   }
 }

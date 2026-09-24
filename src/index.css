@@ -109,7 +109,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-family: 'Hind', 'Segoe UI', system-ui, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -117,19 +117,33 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-weight: 700;
+    font-family: 'Archivo Black', 'Arial Black', system-ui, sans-serif;
+    /* Archivo Black ships a single weight; keep it at 400 so the browser
+       never fakes bold and smudges the letterforms. */
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.24;
     text-wrap: balance;
+  }
+
+  /* At display sizes the heavy weight needs a hair less air, but still
+       enough that descenders never sit on the next line's capitals. */
+  h1 {
+    line-height: 1.16;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Libre Baskerville', Georgia, serif;
+    font-family: 'Archivo Black', 'Arial Black', system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.2;
   }
 
+  /* Small all-caps labels need generous spacing to stay readable. */
   .tracking-label {
-    letter-spacing: 0.12em;
+    letter-spacing: 0.16em;
   }
 
   .reading-text {

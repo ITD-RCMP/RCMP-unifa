@@ -8,7 +8,7 @@ const NotFound = () => (
     <SEO title="Page not found" description="The page you were looking for is not available." />
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-10 py-24 md:py-32 text-center">
       <p className="text-[11px] uppercase tracking-label text-gold font-semibold">Page not found</p>
-      <h1 className="mt-4 text-3xl md:text-5xl text-foreground tracking-tight">
+      <h1 className="mt-4 text-3xl md:text-5xl text-foreground">
         That page isn't here
       </h1>
       <p className="mt-5 text-sm md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed">

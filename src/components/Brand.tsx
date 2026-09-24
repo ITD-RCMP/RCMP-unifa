@@ -14,14 +14,14 @@ const Brand = ({ to = "/", compact = false, onNavigate }: BrandProps) => (
     aria-label="Royal College of Medicine Perak — financial aids home"
   >
     <span
-      className="flex items-center justify-center shrink-0 border border-gold/60 font-display font-bold text-gold bg-navy-mid/60"
-      style={{ width: compact ? 34 : 44, height: compact ? 34 : 44, fontSize: compact ? 13 : 16 }}
+      className="flex items-center justify-center shrink-0 border border-gold/60 font-display text-gold bg-navy-mid/60"
+      style={{ width: compact ? 34 : 44, height: compact ? 34 : 44, fontSize: compact ? 12 : 14 }}
     >
       RCMP
     </span>
-    <span className="flex flex-col leading-tight text-left">
+    <span className="flex flex-col leading-[1.3] text-left">
       <span
-        className="font-display font-bold text-paper tracking-tight"
+        className="font-display text-paper"
         style={{ fontSize: compact ? 14 : 17 }}
       >
         Financial Aids

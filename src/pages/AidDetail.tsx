@@ -77,7 +77,7 @@ const AidDetail = () => {
             </span>
           </div>
 
-          <h1 className="mt-5 text-3xl md:text-5xl leading-tight tracking-tight text-paper">{aid.name}</h1>
+          <h1 className="mt-5 text-3xl md:text-5xl leading-[1.16] text-paper">{aid.name}</h1>
           <p className="mt-3 text-sm text-gold">{aid.provider}</p>
           <p className="mt-6 text-base md:text-lg text-paper/85 max-w-3xl leading-relaxed">{aid.summary}</p>
 

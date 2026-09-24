@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Noir Blog Design System - Monochromatic Dark Theme */
+
+@layer base {
+  :root {
+    /* Clean White Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    /* Elevated Surfaces */
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary (Dark text on light) */
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary (Light gray surfaces) */
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
+
+    /* Muted (Medium gray text) */
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent (Subtle gray) */
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 10%;
+
+    /* Borders (Subtle) */
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 10%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-light;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-normal;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .tracking-display {
+    letter-spacing: -0.025em;
+  }
+  
+  .tracking-label {
+    letter-spacing: 0.15em;
+  }
+  
+  .reading-text {
+    line-height: 1.8;
+  }
+  
+  .date-numbers {
+    font-feature-settings: 'onum' 1;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

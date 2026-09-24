@@ -24,7 +24,7 @@ const SectionHeader = ({
       {eyebrow && (
         <p className="text-[11px] uppercase tracking-label text-gold font-semibold mb-2">{eyebrow}</p>
       )}
-      <Tag className={`${sizeClass} text-foreground tracking-tight`}>{title}</Tag>
+      <Tag className={`${sizeClass} text-foreground`}>{title}</Tag>
       <div className="w-14 h-0.5 bg-gold mt-3" />
       {description && (
         <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-2xl leading-relaxed">

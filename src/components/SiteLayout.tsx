@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import { Link, NavLink, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Brand from "./Brand";
 import { aids } from "@/data/aids";
@@ -90,6 +90,7 @@ const SiteLayout = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ScrollRestoration />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:text-sm"

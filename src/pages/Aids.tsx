@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import {
   aids,
   aidTypeCounts,
+  aidTypeLabels,
   comparisonRows,
   fundingSourceLabels,
   STUDY_LEVELS,
@@ -115,7 +116,7 @@ const Aids = () => {
                 </FilterChip>
                 {aidTypeCounts().map(({ type, count }) => (
                   <FilterChip key={type} active={typeParam === type} onClick={() => setType(type)}>
-                    {type === "all" ? "All" : `${type.charAt(0).toUpperCase()}${type.slice(1)}`}
+                    {aidTypeLabels[type].label}
                     <span className="ml-1.5 opacity-60">{count}</span>
                   </FilterChip>
                 ))}
